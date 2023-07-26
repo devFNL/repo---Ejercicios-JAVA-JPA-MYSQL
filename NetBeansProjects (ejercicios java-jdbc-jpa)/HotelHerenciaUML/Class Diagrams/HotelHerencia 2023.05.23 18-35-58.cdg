@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HotelHerencia">
+  <ClassDiagramComponents>
+    <Class name="Hotel" package="Entidad" visibility="public" xPosition="735.0" yPosition="8.0">
+      <Fields>
+        <Field name="cantHab" type="Integer" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCantHab" returnType="Integer" visibility="public"/>
+        <Method name="setCantHab" returnType="void" visibility="public">
+          <Argument type="Integer" name="cantHab"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hotel1" package="Entidad" visibility="public" xPosition="1116.0" yPosition="22.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="protected"/>
+        <Field name="superficie" type="Double" visibility="protected"/>
+        <Field name="bano" type="boolean" visibility="protected"/>
+        <Field name="ascensor" type="boolean" visibility="protected"/>
+        <Field name="calefaccion" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel2" package="Entidad" visibility="public" xPosition="856.0" yPosition="272.0">
+      <Fields>
+        <Field name="cajaSeguridad" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel3" package="Entidad" visibility="public" xPosition="856.0" yPosition="446.0">
+      <Fields>
+        <Field name="aireAcc" type="boolean" visibility="protected"/>
+        <Field name="bar" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel4" package="Entidad" visibility="public" xPosition="856.0" yPosition="640.0">
+      <Fields>
+        <Field name="miniBarHab" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel5" package="Entidad" visibility="public" isFinal="true" xPosition="856.0" yPosition="814.0">
+      <Fields>
+        <Field name="casino" type="boolean" visibility="protected"/>
+        <Field name="restaurant" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantHab"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="HotelHerencia" package="hotelherencia" visibility="public" xPosition="361.0" yPosition="239.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidad.Hotel4" target="Entidad.Hotel3"/>
+    <IsRelation name="is" source="Entidad.Hotel3" target="Entidad.Hotel2"/>
+    <IsRelation name="is" source="Entidad.Hotel1" target="Entidad.Hotel"/>
+    <IsRelation name="is" source="Entidad.Hotel2" target="Entidad.Hotel1"/>
+    <IsRelation name="is" source="Entidad.Hotel5" target="Entidad.Hotel4"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

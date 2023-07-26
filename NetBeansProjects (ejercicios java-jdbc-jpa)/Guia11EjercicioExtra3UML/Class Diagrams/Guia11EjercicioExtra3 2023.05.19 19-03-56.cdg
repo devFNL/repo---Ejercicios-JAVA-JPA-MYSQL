@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Guia11EjercicioExtra3">
+  <ClassDiagramComponents>
+    <Class name="Guia11EjercicioExtra3" package="com.mycompany.guia11ejercicioextra3" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="Entidad" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="mail" type="String" visibility="private"/>
+        <Field name="domicilio" type="String" visibility="private"/>
+        <Field name="telefono" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="dni"/>
+          <Argument type="String" name="mail"/>
+          <Argument type="String" name="domicilio"/>
+          <Argument type="int" name="telefono"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getDni" returnType="int" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="int" name="dni"/>
+        </Method>
+        <Method name="getMail" returnType="String" visibility="public"/>
+        <Method name="setMail" returnType="void" visibility="public">
+          <Argument type="String" name="mail"/>
+        </Method>
+        <Method name="getDomicilio" returnType="String" visibility="public"/>
+        <Method name="setDomicilio" returnType="void" visibility="public">
+          <Argument type="String" name="domicilio"/>
+        </Method>
+        <Method name="getTelefono" returnType="int" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="int" name="telefono"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cuota" package="Entidad" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="numCuota" type="int" visibility="private"/>
+        <Field name="montoCuota" type="double" visibility="private"/>
+        <Field name="pagada" type="boolean" visibility="private"/>
+        <Field name="fechaVenc" type="Date" visibility="private"/>
+        <Field name="formaPago" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="numCuota"/>
+          <Argument type="double" name="montoCuota"/>
+          <Argument type="boolean" name="pagada"/>
+          <Argument type="Date" name="fechaVenc"/>
+          <Argument type="String" name="formaPago"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumCuota" returnType="int" visibility="public"/>
+        <Method name="setNumCuota" returnType="void" visibility="public">
+          <Argument type="int" name="numCuota"/>
+        </Method>
+        <Method name="getMontoCuota" returnType="double" visibility="public"/>
+        <Method name="setMontoCuota" returnType="void" visibility="public">
+          <Argument type="double" name="montoCuota"/>
+        </Method>
+        <Method name="isPagada" returnType="boolean" visibility="public"/>
+        <Method name="setPagada" returnType="void" visibility="public">
+          <Argument type="boolean" name="pagada"/>
+        </Method>
+        <Method name="getFechaVenc" returnType="Date" visibility="public"/>
+        <Method name="setFechaVenc" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaVenc"/>
+        </Method>
+        <Method name="getFormaPago" returnType="String" visibility="public"/>
+        <Method name="setFormaPago" returnType="void" visibility="public">
+          <Argument type="String" name="formaPago"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Poliza" package="Entidad" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="numPoliza" type="int" visibility="private"/>
+        <Field name="fechaIni" type="Date" visibility="private"/>
+        <Field name="fechaFin" type="Date" visibility="private"/>
+        <Field name="cantCuotas" type="int" visibility="private"/>
+        <Field name="formaPago" type="String" visibility="private"/>
+        <Field name="montoAsegurado" type="double" visibility="private"/>
+        <Field name="granizo" type="boolean" visibility="private"/>
+        <Field name="montoGranizo" type="double" visibility="private"/>
+        <Field name="tipoCobertura" type="String" visibility="private"/>
+        <Field name="cliente" type="Cliente" visibility="private"/>
+        <Field name="vehiculo" type="Vehiculo" visibility="private"/>
+        <Field name="cuotas" type="Cuota[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="numPoliza"/>
+          <Argument type="Date" name="fechaIni"/>
+          <Argument type="Date" name="fechaFin"/>
+          <Argument type="int" name="cantCuotas"/>
+          <Argument type="String" name="formaPago"/>
+          <Argument type="double" name="montoAsegurado"/>
+          <Argument type="boolean" name="granizo"/>
+          <Argument type="double" name="montoGranizo"/>
+          <Argument type="String" name="tipoCobertura"/>
+          <Argument type="Cliente" name="cliente"/>
+          <Argument type="Vehiculo" name="vehiculo"/>
+          <Argument type="Cuota[]" name="cuotas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumPoliza" returnType="int" visibility="public"/>
+        <Method name="setNumPoliza" returnType="void" visibility="public">
+          <Argument type="int" name="numPoliza"/>
+        </Method>
+        <Method name="getFechaIni" returnType="Date" visibility="public"/>
+        <Method name="setFechaIni" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaIni"/>
+        </Method>
+        <Method name="getFechaFin" returnType="Date" visibility="public"/>
+        <Method name="setFechaFin" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaFin"/>
+        </Method>
+        <Method name="getCantCuotas" returnType="int" visibility="public"/>
+        <Method name="setCantCuotas" returnType="void" visibility="public">
+          <Argument type="int" name="cantCuotas"/>
+        </Method>
+        <Method name="getFormaPago" returnType="String" visibility="public"/>
+        <Method name="setFormaPago" returnType="void" visibility="public">
+          <Argument type="String" name="formaPago"/>
+        </Method>
+        <Method name="getMontoAsegurado" returnType="double" visibility="public"/>
+        <Method name="setMontoAsegurado" returnType="void" visibility="public">
+          <Argument type="double" name="montoAsegurado"/>
+        </Method>
+        <Method name="isGranizo" returnType="boolean" visibility="public"/>
+        <Method name="setGranizo" returnType="void" visibility="public">
+          <Argument type="boolean" name="granizo"/>
+        </Method>
+        <Method name="getMontoGranizo" returnType="double" visibility="public"/>
+        <Method name="setMontoGranizo" returnType="void" visibility="public">
+          <Argument type="double" name="montoGranizo"/>
+        </Method>
+        <Method name="getTipoCobertura" returnType="String" visibility="public"/>
+        <Method name="setTipoCobertura" returnType="void" visibility="public">
+          <Argument type="String" name="tipoCobertura"/>
+        </Method>
+        <Method name="getCliente" returnType="Cliente" visibility="public"/>
+        <Method name="setCliente" returnType="void" visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Method>
+        <Method name="getVehiculo" returnType="Vehiculo" visibility="public"/>
+        <Method name="setVehiculo" returnType="void" visibility="public">
+          <Argument type="Vehiculo" name="vehiculo"/>
+        </Method>
+        <Method name="getCuotas" returnType="Cuota[]" visibility="public"/>
+        <Method name="setCuotas" returnType="void" visibility="public">
+          <Argument type="Cuota[]" name="cuotas"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="Entidad" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="numMotor" type="int" visibility="private"/>
+        <Field name="chasis" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="anio"/>
+          <Argument type="int" name="numMotor"/>
+          <Argument type="String" name="chasis"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+        <Method name="getNumMotor" returnType="int" visibility="public"/>
+        <Method name="setNumMotor" returnType="void" visibility="public">
+          <Argument type="int" name="numMotor"/>
+        </Method>
+        <Method name="getChasis" returnType="String" visibility="public"/>
+        <Method name="setChasis" returnType="void" visibility="public">
+          <Argument type="String" name="chasis"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SeguroServicio" package="Servicio" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="sc" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearCliente" returnType="Cliente" visibility="public"/>
+        <Method name="crearVehiculo" returnType="Vehiculo" visibility="public"/>
+        <Method name="crearPoliza" returnType="Poliza" visibility="public"/>
+        <Method name="crearCuota" returnType="Cuota" visibility="public">
+          <Argument type="int" name="num"/>
+        </Method>
+        <Method name="menu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Entidad.Poliza" target="Entidad.Cuota" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.SeguroServicio" target="Entidad.Cuota" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidad.Poliza" target="Entidad.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculo" source="Entidad.Poliza" target="Entidad.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.SeguroServicio" target="Entidad.Vehiculo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.SeguroServicio" target="Entidad.Poliza" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.SeguroServicio" target="Entidad.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidad.Poliza" target="Entidad.Vehiculo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="Entidad.Poliza" target="Entidad.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

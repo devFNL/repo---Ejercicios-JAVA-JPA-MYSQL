@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="jarvisUML">
+  <ClassDiagramComponents>
+    <Class name="Armadura" package="" visibility="public" xPosition="262.0" yPosition="29.0">
+      <Fields>
+        <Field name="colorPrimario" type="Object" visibility="private"/>
+        <Field name="colorSecundario" type="Object" visibility="private"/>
+        <Field name="Botax2" type="Object" visibility="private"/>
+        <Field name="Guantex2" type="Object" visibility="private"/>
+        <Field name="nivelResistencia" type="Object" visibility="private"/>
+        <Field name="nivelSalud" type="Object" visibility="private"/>
+        <Field name="Generador" type="Object" visibility="private"/>
+        <Field name="Bateria" type="Object" visibility="private"/>
+        <Field name="Casco" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Bota" package="" visibility="public" xPosition="19.0" yPosition="290.0">
+      <Fields>
+        <Field name="propulsor" type="Object" visibility="private"/>
+        <Field name="Propulsor" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Guante" package="" visibility="public" xPosition="200.0" yPosition="290.0">
+      <Fields>
+        <Field name="repulsor" type="Object" visibility="private"/>
+        <Field name="Repulsor" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Generador" package="" visibility="public" xPosition="381.0" yPosition="290.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Bateria" package="" visibility="public" xPosition="560.0" yPosition="290.0">
+      <Fields>
+        <Field name="Energia" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Casco" package="" visibility="public" xPosition="736.0" yPosition="290.0">
+      <Fields>
+        <Field name="Consola" type="Object" visibility="private"/>
+        <Field name="Sintetizador" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
